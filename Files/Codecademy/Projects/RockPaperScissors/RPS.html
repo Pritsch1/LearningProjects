@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="MyWayGameJS.js"></script>
+    <style>
+        body {
+            background-image: url(rock-paper-scissor-ft-1.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        p {
+            color: wheat;
+            font-size: xx-large;
+        }
+        h1 {
+            color: wheat;
+        }
+        h3 {
+            color: wheat;
+        }
+    </style>
+</head>
+<body style="text-align: center">
+    <h1>Wellcome to The Rock, Paper and Scissors Game!</h1>
+    <br /><br /><p>You will be playing against our feared AI. An AI that consists of a basic code line...</p>
+    <p>Have fun!</p>
+    <h3>Choose An Option to See Who Wins!</h3>
+    <input type="button" value="Rock" id="choice1" onclick="showUserAnswer(this.id), gameProgress()" />
+    <input type="button" value="Paper" id="choice2" onclick="showUserAnswer(this.id), gameProgress()" />
+    <input type="button" value="Scissors" id="choice3" onclick="showUserAnswer(this.id), gameProgress()" />
+    
+    <p>Your Choice: <span id="userChoice"></span></p>
+    <p>AI's Choice: <span id="aiChoice"></span></p>
+    <p>And the Winner is: <span id="winner"></span></p>
+</body>
+</html>
+
